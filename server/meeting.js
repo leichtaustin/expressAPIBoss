@@ -23,5 +23,6 @@ meetingsRouter.post('/', (req, res, next) => {
 });
 
 meetingsRouter.delete('/', (req, res, next) => {
-    res.send(deleteAllFromDatabase('meetings'));
+    deleteAllFromDatabase('meetings');
+    res.status(204).send();
 });
