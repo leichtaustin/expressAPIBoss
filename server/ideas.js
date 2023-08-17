@@ -46,4 +46,4 @@ const {
         res.status(500)
     }
     res.send();
-  })
+  });
